@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio and online resume of Allowenna Claire Luarez — Computer Science student and aspiring UI/UX designer." />
+  <title>Allowenna Claire Luarez · UI/UX Design Portfolio</title>
+  <meta name="theme-color" content="#d9480f" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Social sharing preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Allowenna Claire Luarez · UI/UX Design Portfolio" />
+  <meta property="og:description" content="Computer Science student and aspiring UI/UX designer. Skills, resume, and certificates." />
+  <meta property="og:image" content="images/Profile.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Fonts: Fraunces (display serif) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Home — Allowenna Claire Luarez">
+        <span class="brand-mark" aria-hidden="true">ACL</span>
+        <span class="brand-text">Allowenna<em>.UI/UX</em></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-socials" aria-label="Social media links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HOME / HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-blooms" aria-hidden="true">
+        <!-- Decorative geometric shapes -->
+        <svg class="bloom bloom-1" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="92" fill="none" stroke="var(--clr-lavender)" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+          <circle cx="100" cy="100" r="62" fill="var(--clr-primary-soft)"/>
+          <circle cx="100" cy="100" r="32" fill="var(--clr-primary)" opacity="0.85"/>
+        </svg>
+        <svg class="bloom bloom-2" viewBox="0 0 80 80">
+          <polygon points="40,10 70,66 10,66" fill="var(--clr-bloom)" stroke="var(--clr-bloom)" stroke-width="8" stroke-linejoin="round"/>
+        </svg>
+        <svg class="leaf leaf-1" viewBox="0 0 60 60">
+          <rect x="8" y="8" width="44" height="44" rx="10" fill="none" stroke="var(--clr-leaf)" stroke-width="4" transform="rotate(15 30 30)"/>
+        </svg>
+      </div>
+
+      <div class="hero-grid container">
+        <div class="hero-content">
+          <p class="eyebrow reveal">UI/UX Designer in the Making · BSCS Student</p>
+          <h1 class="hero-title reveal">Hi, I'm <span class="accent">Allowenna Claire</span> Luarez</h1>
+          <p class="hero-tagline reveal">Creating digital experiences that feel effortless to use.</p>
+          <p class="hero-intro reveal">
+            Welcome to my portfolio! I'm Allowenna Claire Luarez, a Computer Science student who loves turning ideas into clean, friendly interfaces. Take a look at my skills, resume, and certificates.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+            <a href="#resume" class="btn btn-ghost">View Resume</a>
+          </div>
+          <ul class="hero-stats reveal">
+            <li><strong>186</strong><span>Hours of OJT at SPDRRMO</span></li>
+            <li><strong>8</strong><span>Key Skills</span></li>
+            <li><strong>4</strong><span>Certificates</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <span class="profile-ribbon" aria-hidden="true">UI/UX Design</span>
+            <div class="avatar">
+              <img src="images/Profile.jpg" alt="Portrait of Allowenna Claire Luarez" width="1024" height="1024" />
+            </div>
+            <h2 class="profile-name">Allowenna Claire Luarez</h2>
+            <p class="profile-role">UI/UX Designer in Training</p>
+            <div class="profile-tags">
+              <span>Wireframing</span>
+              <span>Prototyping</span>
+              <span>User Research</span>
+            </div>
+            <div class="profile-line" aria-hidden="true"></div>
+            <ul class="profile-facts">
+              <li><span class="dot" aria-hidden="true"></span>BS Computer Science · Sorsogon State University</li>
+              <li><span class="dot" aria-hidden="true"></span>Bulan, Sorsogon, Philippines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down to About section">
+        <span class="scroll-mouse" aria-hidden="true"></span>
+        <span class="visually-hidden">Scroll down</span>
+      </a>
+    </section>
+
+    <!-- ============ 2. ABOUT ME ============ -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">A little about me</p>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+          <p class="section-sub">A student designer learning to build software that people genuinely enjoy using.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>Computer Science student</strong> working toward a career as a <strong>UI/UX designer</strong>. I love the space where design meets technology: interfaces that look good and, more importantly, feel <em>simple and natural</em> to use.
+            </p>
+            <p>
+              Right now I'm learning to sketch layouts, create <strong>wireframes and prototypes</strong>, and map out how someone moves through a product, step by step. My programming background helps me see how a design becomes working software.
+            </p>
+            <p>
+              This portfolio collects my <strong>skills and certificates</strong>, from HTML, JavaScript, and C coursework to my on-the-job training at SPDRRMO. I'm always open to feedback, fresh ideas, and new opportunities.
+            </p>
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+          </div>
+
+          <div class="about-cards">
+            <article class="about-card reveal">
+              <span class="about-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </span>
+              <h3>People First</h3>
+              <p>I start with what users need, so each screen has a clear purpose and feels easy to use.</p>
+            </article>
+            <article class="about-card reveal">
+              <span class="about-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></svg>
+              </span>
+              <h3>Clear Visual Hierarchy</h3>
+              <p>Layout, spacing, and hierarchy guide the eye and keep content easy to scan.</p>
+            </article>
+            <article class="about-card reveal">
+              <span class="about-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              </span>
+              <h3>Polished Details</h3>
+              <p>Labels, states, and flows may be small, but they are what make a product feel finished.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. ONLINE RESUME ============ -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience &amp; credentials</p>
+          <h2 class="section-title">Online <span class="accent">Resume</span></h2>
+          <p class="section-sub">A quick snapshot of my background, training, and skills.</p>
+        </div>
+
+        <article class="resume-card reveal">
+          <div class="resume-side">
+            <div class="resume-avatar">
+              <img src="images/Profile.jpg" alt="Portrait of Allowenna Claire Luarez" width="1024" height="1024" />
+            </div>
+            <h3 class="resume-name">Allowenna Claire Luarez</h3>
+            <p class="resume-role">UI/UX Designer in Training</p>
+
+            <div class="resume-block">
+              <h4>Contact</h4>
+              <ul class="resume-contact">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  <a href="mailto:allowenna.luarez@sorsu.edu.ph">allowenna.luarez@sorsu.edu.ph</a>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                  <a href="tel:+639750552261">0975 055 2261</a>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                  <span>E. Quirino, Bulan, Sorsogon, Philippines</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="resume-block">
+              <h4>Certifications</h4>
+              <div class="cert-gallery">
+                <a
+                  class="cert-thumb"
+                  href="images/cert-html.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="HTML course certificate from SoloLearn (opens full-size image in a new tab)"
+                >
+                  <img src="images/cert-html.jpg" alt="HTML course certificate from SoloLearn" loading="lazy" width="1754" height="1238" />
+                  <span class="cert-label">HTML · SoloLearn</span>
+                </a>
+                <a
+                  class="cert-thumb"
+                  href="images/cert-javascript.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="JavaScript course certificate from SoloLearn (opens full-size image in a new tab)"
+                >
+                  <img src="images/cert-javascript.jpg" alt="JavaScript course certificate from SoloLearn" loading="lazy" width="1754" height="1238" />
+                  <span class="cert-label">JavaScript · SoloLearn</span>
+                </a>
+                <a
+                  class="cert-thumb"
+                  href="images/cert-c.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="C course certificate from SoloLearn (opens full-size image in a new tab)"
+                >
+                  <img src="images/cert-c.jpg" alt="C course certificate from SoloLearn" loading="lazy" width="1754" height="1238" />
+                  <span class="cert-label">C · SoloLearn</span>
+                </a>
+                <a
+                  class="cert-thumb"
+                  href="images/cert-ojt.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="On-the-Job Training certificate of completion from SPDRRMO (opens full-size image in a new tab)"
+                >
+                  <img src="images/cert-ojt.jpg" alt="On-the-Job Training certificate of completion from SPDRRMO" loading="lazy" width="1008" height="776" />
+                  <span class="cert-label">OJT · SPDRRMO</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="resume-block">
+              <h4>Core Skills</h4>
+              <ul class="resume-tags">
+                <li>Wireframing &amp; Prototyping</li>
+                <li>User Research</li>
+                <li>Visual &amp; Interface Design</li>
+                <li>User Flows &amp; Usability</li>
+                <li>HTML &amp; Web Basics</li>
+                <li>Programming Fundamentals</li>
+                <li>Attention to Detail</li>
+                <li>Communication &amp; Teamwork</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-main">
+            <div class="resume-block">
+              <h4>Professional Summary</h4>
+              <p>
+                Computer Science student working toward a career in UI/UX design, with a growing passion for clear, user-friendly interfaces. I practice planning layouts, building wireframes and prototypes, and designing around real user needs, supported by coursework in HTML, JavaScript, and C and 186 hours of on-the-job training at a government office.
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h4>Experience</h4>
+              <ul class="resume-timeline">
+                <li>
+                  <h5>OJT Trainee — Sorsogon Provincial Disaster Risk Reduction and Management Office (SPDRRMO)</h5>
+                  <p class="resume-date">June 29 – July 31, 2026 · 186 hours On-the-Job Training</p>
+                  <p>
+                    Completed a 186-hour on-the-job training program as a BSCS student at the SPDRRMO in Sorsogon City, gaining hands-on experience in a real office environment.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="resume-block">
+              <h4>Education</h4>
+              <!-- EDIT: confirm school names and years -->
+              <ul class="resume-timeline">
+                <li>
+                  <h5>Bachelor of Science in Computer Science</h5>
+                  <p class="resume-date">Sorsogon State University-Bulan Campus · 2023 – 2026</p>
+                </li>
+                <li>
+                  <h5>Senior High School</h5>
+                  <p class="resume-date">San Francisco National High School · 2021 – 2023</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 4. SKILLS ============ -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I can do</p>
+          <h2 class="section-title">My <span class="accent">Skills</span></h2>
+          <p class="section-sub">Skills I'm building through coursework, training, and hands-on practice.</p>
+        </div>
+
+        <!-- EDIT: adjust these skills and descriptions to match what you actually know -->
+        <ul class="skills-grid">
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></svg>
+            </span>
+            <h3>Wireframing &amp; Prototyping</h3>
+            <p>Turning rough ideas into low- and high-fidelity layouts and clickable flows.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </span>
+            <h3>User Research</h3>
+            <p>Learning what people really need before I start designing a solution.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM8 18H4v-2h4v2zm0-4H4v-2h4v2zm0-4H4V8h4v2zm10 8h-8v-2h8v2zm0-4h-8v-2h8v2zm0-4h-8V8h8v2z"/></svg>
+            </span>
+            <h3>Visual &amp; Interface Design</h3>
+            <p>Combining layout, color, and type to build screens that feel clear and balanced.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg>
+            </span>
+            <h3>User Flows &amp; Usability</h3>
+            <p>Tracing how people move through a product and removing the bumps along the way.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM8 18H4v-2h4v2zm0-4H4v-2h4v2zm0-4H4V8h4v2zm10 8h-8v-2h8v2zm0-4h-8v-2h8v2zm0-4h-8V8h8v2z"/></svg>
+            </span>
+            <h3>HTML &amp; Web Basics</h3>
+            <p>Building web pages with clean, semantic HTML as a foundation for prototyping interfaces.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg>
+            </span>
+            <h3>Programming Fundamentals</h3>
+            <p>Core JavaScript and C concepts from my coursework, so I understand how designs become working software.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </span>
+            <h3>Attention to Detail</h3>
+            <p>Noticing the spacing, alignment, and consistency issues that separate good from polished.</p>
+          </li>
+          <li class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </span>
+            <h3>Communication &amp; Teamwork</h3>
+            <p>Explaining ideas clearly and working well with teammates and developers.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 5. EDUCATIONAL BACKGROUND ============ -->
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">My studies</p>
+          <h2 class="section-title">Educational <span class="accent">Background</span></h2>
+          <p class="section-sub">Where I'm learning, and how it connects to design.</p>
+        </div>
+
+        <!-- EDIT: confirm school names and years -->
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <p class="timeline-date">2023 – 2026</p>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="timeline-school">Sorsogon State University-Bulan Campus</p>
+              <p>Learning programming, systems, and software development, the technical foundation behind my interest in UI/UX design.</p>
+            </article>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <p class="timeline-date">2021 – 2023</p>
+              <h3>Senior High School</h3>
+              <p class="timeline-school">San Francisco National High School</p>
+              <p>Studied Electrical Installation and Maintenance (EIM) under the TVL track, gaining hands-on skills in wiring, troubleshooting, and electrical safety. It taught me to follow procedures carefully and pay attention to detail, 
+                skills I now bring to design and computer science.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 6. PROJECTS ============ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title">My <span class="accent">Projects</span></h2>
+          <p class="section-sub">Design and school projects, with more on the way.</p>
+        </div>
+
+        <!-- EDIT: replace the three placeholder projects below with your real ones -->
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Mobile App Redesign</h3>
+              <span class="project-badge">UI/UX · Mobile App Redesign</span>
+            </div>
+            <p>
+              A redesign of an everyday app (for example, a school schedule or food ordering app) to make its screens clearer and easier to use. 
+              I reviewed the existing problems, sketched wireframes, and built a clickable prototype of the main flow.
+            </p>
+            <ul class="project-meta">
+              <li><strong>My Role:</strong> UI/UX Designer 
+                (research, wireframes, prototype)</li>
+              <li><strong>Tools:</strong> Figma</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Grade Management System</h3>
+              <span class="project-badge">UI/UX · Web or Mobile System</span>
+            </div>
+            <p>
+              A grade management system that lets teachers record and update student grades and lets students view their grades and progress. 
+              I designed the screens for logging in, entering grades, and viewing results, with a focus on clear tables, easy navigation, and a layout that is simple to read.
+            </p>
+            <ul class="project-meta">
+              <li><strong>My Role:</strong> UI/UX Designer 
+                (wireframes, interface design, prototype)</li>
+              <li><strong>Tools:</strong> Figma</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Cupcake Ordering App</h3>
+              <span class="project-badge">UI/UX · Mobile App or Web Design</span>
+            </div>
+            <p>
+              An ordering app for a cupcake shop where customers can browse flavors, choose quantities, customize their order, and check out. 
+              I designed the menu, cart, and order confirmation screens with large photos, clear buttons, and a simple step-by-step flow.
+            </p>
+            <ul class="project-meta">
+              <li><strong>My Role:</strong> UI/UX Designer 
+                (user flow, wireframes, interface design, prototype)</li>
+              <li><strong>Tools:</strong> Figma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. SOCIAL MEDIA ============ -->
+    <!-- EDIT: replace each href (here, in the header, contact note and footer) with your real profile URLs, and update the @handles -->
+    <section id="social" class="section social">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Stay in touch</p>
+          <h2 class="section-title">Find Me <span class="accent">Online</span></h2>
+          <p class="section-sub">Say hi, follow along, and see what I'm working on next.</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </span>
+            <span class="social-name">Facebook</span>
+            <span class="social-handle">@allowennaclaire.luarez</span>
+            <span class="social-cta">Visit Profile <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="social-card" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </span>
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">@aec.iee</span>
+            <span class="social-cta">Visit Profile <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="social-card" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </span>
+            <span class="social-name">GitHub</span>
+            <span class="social-handle">@allowenna</span>
+            <span class="social-cta">Visit Profile <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ 8. CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Have an idea or an opportunity?</p>
+          <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+          <p class="section-sub">I'd love to hear about your project, your team, or a chance to learn and grow.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Reach Me Here</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:allowenna.luarez@sorsu.edu.ph">allowenna.luarez@sorsu.edu.ph</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label">Mobile</span>
+                  <a href="tel:+639750552261">0975 055 2261</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span>E. Quirino, Bulan, Sorsogon, Philippines</span>
+                </div>
+              </li>
+            </ul>
+            <p class="contact-note">Prefer social media? You can also find me on
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>,
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>, or
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>.
+            </p>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" />
+                <p class="form-error" id="cf-name-error"></p>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" />
+                <p class="form-error" id="cf-email-error"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="What is this about?" />
+              <p class="form-error" id="cf-subject-error"></p>
+            </div>
+            <div class="form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a little about your idea or opportunity..."></textarea>
+              <p class="form-error" id="cf-message-error"></p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <p class="form-feedback" id="cf-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">ACL</span>
+        <p class="footer-name">Allowenna Claire Luarez</p>
+        <p class="footer-role">UI/UX Designer in Training · Computer Science Student</p>
+      </div>
+      <ul class="footer-nav" aria-label="Footer navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© <span id="footer-year">2026</span> Allowenna Claire Luarez · UI/UX Design. All rights reserved.</p>
+      <p class="footer-motto">Designed with care, one detail at a time.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
